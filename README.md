@@ -7,7 +7,7 @@ A React.js web application that enables residents of a neighborhood to lend and 
 2.  Live Demo
 
   
- `https://your-app-name.vercel.app`
+ `https://neighborshare.vercel.app`
 
 ---
 
@@ -97,6 +97,8 @@ src/
 * Notifications (mock or real)
 
 * Full responsive nav menu
+
+* using Tailwind  
 
 **Author**
 Ranjana
