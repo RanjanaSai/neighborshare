@@ -1,0 +1,90 @@
+* {
+  margin: 3px;
+}
+.card {
+  background-color: grey;
+  border: 5px solid black;
+  border-radius: 12px;
+  padding: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.image {
+  maxwidth: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.owner {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.status {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: green;
+}
+
+.unavailable {
+  color: red;
+}
+
+.sold {
+  color: red;
+  font-style: italic;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0059c1;
+}
+
+.mark {
+  text: red;
+}
+.item-grid {
+  display: grid;
+  border: 2px solid grey;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}

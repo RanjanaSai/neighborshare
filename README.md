@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+1. Neighborhood Resource Sharing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React.js web application that enables residents of a neighborhood to lend and borrow household items such as tools, books, and appliances — all to promote sustainability and community bonding.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+2.  Live Demo
 
-### `npm start`
+  
+ `https://your-app-name.vercel.app`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Tech Stack
 
-### `npm test`
+Frontend: React.js (with functional components and hooks)
+Routing: React Router
+Styling: Plain CSS (responsive and mobile-friendly)
+Map: React Leaflet (with mock geolocation data)
+Data Management: React State + Context + `localStorage` for persistence
+Deployment: Vercel 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+4. Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>
+git clone https://github.com/yourusername/neighborhood-sharing-app.git
+cd neighborhood-sharing-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.**Install dependencies**
 
-### `npm run eject`
+>npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.**Start the development server**
+>npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Open http://localhost:3000 in your browser.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Features -->
+**Core Pages**
+ *  Home (/) — Item catalog with search, filter, sort, and mark-as-sold
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Item Details (/items/:id) — Full item view with request option (mocked)
 
-## Learn More
+* Add Item (/add-item) — Form with validation and submit feedback
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 404 Page (*) — Custom error page with navigation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Bonus Features Implemented**
 
-### Code Splitting
+* Map View (/map) — Interactive map with item pins from mock geo-data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* localStorage Persistence — Items and statuses (sold/borrowed) saved locally
 
-### Analyzing the Bundle Size
+* My Requests (in progress) — Data array created for future status handling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Mock Data**
+* All data is mocked in frontend:
 
-### Making a Progressive Web App
+* Item list (tools, appliances, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Geolocation for map pins
 
-### Advanced Configuration
+* User lending/borrowing status (no authentication)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Project Structure**
 
-### `npm run build` fails to minify
+src/
+├── components/         # Reusable UI components
+├── context/            # App-wide state and item management
+├── data/               # Mock item and map data
+├── pages/              # Each route/page (Home, Map, AddItem, etc.)
+├── styles/             # css files for componenets and pages
+├── App.js              # Main app layout and routes
+└── index.js            # React root entry point
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**Known Issues**
+* No real backend — items and map data is  simulated.
+
+* "My Requests" page structure exists but functionality is not yet implemented.
+
+**Future Improvements**
+
+
+* Add mock or real user login
+
+* Improve "My Requests" logic (e.g. cancel request, status change)
+
+* Profile view with editable status
+
+* Notifications (mock or real)
+
+* Full responsive nav menu
+
+**Author**
+Ranjana
+Ranjanasai(GitHub)
+

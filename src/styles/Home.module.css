@@ -1,0 +1,21 @@
+.home-container {
+  max-width: 1200px;
+  margin: 2 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.item-grid {
+  display: grid;
+  border: 2px solid grey;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid green;
+  border-radius: 5px;
+}
