@@ -27,7 +27,7 @@ Deployment: Vercel
 1. **Clone the repository**
 
 >
-git clone https://github.com/yourusername/neighborhood-sharing-app.git
+git clone https://github.com/Ranjanasai/neighborshare.git
 cd neighborhood-sharing-app
 
 2.**Install dependencies**
